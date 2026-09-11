@@ -1,0 +1,9 @@
+platform,level,n_sensitivity,deadline_sensitivity_us
+ESP32 deep,44,99,1056010
+RP2040 deep,44,99,4153556
+RP2040 unit 1,44,99,3596856
+RP2040 unit 2,44,99,3593510
+RP2040 unit 1,65,99,4196611
+RP2040 unit 2,65,99,4196214
+RP2040 unit 1,87,99,7091191
+RP2040 unit 2,87,99,6004953

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite this dataset when using these measurements."
+type: dataset
+title: "ML-DSA timing data"
+authors:
+  - family-names: Chhetri
+    given-names: Rojin
+  - family-names: Pillai
+    given-names: Babu
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2026-09-11
+url: "https://github.com/rojinc/mldsa-timing-data"
+repository-code: "https://github.com/rojinc/mldsa-timing-data"
+abstract: >-
+  Signing latency, rejection counts, stage diagnostics and telemetry measurements
+  on ESP32 and RP2040 microcontrollers, with archived iteration records and
+  numerical results supporting deadline-oriented analysis of ML-DSA signing.
+keywords:
+  - ML-DSA
+  - post-quantum cryptography
+  - signing latency
+  - embedded systems
+  - ESP32
+  - RP2040

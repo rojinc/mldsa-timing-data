@@ -1,0 +1,9 @@
+platform,campaign,level,settings_attempted,settings_successful,all_assignments_identical,max_abs_B_deviation_pct,max_abs_Rz_deviation_pct,max_abs_Rlate_deviation_pct
+ESP32 deep,deep,44,27,27,True,0.0,0.0,0.0
+RP2040 deep,deep,44,27,27,True,0.0,0.0,0.0
+RP2040 unit 1,inter-unit,44,27,27,True,0.0,0.0,0.0
+RP2040 unit 2,inter-unit,44,27,27,True,0.0,0.0,0.0
+RP2040 unit 1,inter-unit,65,27,27,True,0.0,0.0,0.0
+RP2040 unit 2,inter-unit,65,27,27,True,0.0,0.0,0.0
+RP2040 unit 1,inter-unit,87,27,27,True,0.0,0.0,0.0
+RP2040 unit 2,inter-unit,87,27,27,True,0.0,0.0,0.0

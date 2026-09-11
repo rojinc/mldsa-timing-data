@@ -1,0 +1,20 @@
+{
+  "seed": 204907,
+  "repetitions": 1000,
+  "sizes": [
+    250,
+    500,
+    1000,
+    2000,
+    5000,
+    10000
+  ],
+  "sampling": "nested, without replacement",
+  "primary_boundaries": "fixed at full-trace first-four-mode midpoints",
+  "secondary": "redetect all four modes independently for each 1000-observation subset",
+  "interval": "5th to 95th subset percentiles; conditional on the archived trace, not a confidence interval",
+  "source_hashes": {
+    "ESP32 deep": "7d931c2127845a367bf30673556f648e087dae323f71b5e7ca5e2f7925a80a59",
+    "RP2040 deep": "33989be949e0538277f4d41705bc553f96e1b3d4e6f3be0bd78141f3465b1ffb"
+  }
+}

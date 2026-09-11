@@ -1,0 +1,20 @@
+{
+  "repositories": {
+    "wsn": {
+      "url": "https://github.com/rojinc/pqc-wsn-measurements",
+      "commit": "22bb5c8d41ced0a9d1e6dc780fe37b0334d448ad"
+    },
+    "cortex": {
+      "url": "https://github.com/rojinc/pqc-cortex-m0-benchmark",
+      "commit": "3d75d76a16d05753a5f74ef6e721a8a575df4354"
+    }
+  },
+  "sha256": {
+    "wsn/results/raw/esp32_full.csv": "7d931c2127845a367bf30673556f648e087dae323f71b5e7ca5e2f7925a80a59",
+    "wsn/results/raw/pico_full.csv": "33989be949e0538277f4d41705bc553f96e1b3d4e6f3be0bd78141f3465b1ffb",
+    "cortex/results/campaign_c/board1/mldsa.csv": "91aa4c003f99bb6e80bd278c082dffdc2ebfe65272894e7b59e3662b75e14e2c",
+    "cortex/results/campaign_c/board2/mldsa.csv": "a083c356854cff102d6e4b9bf1898043ec93528b8af66f9a9716a9b5b315e318",
+    "cortex/results/local_x86_10k/mldsa_rejection_10k_x86.csv": "2004b4aff45880b070f87419b2ca4048412f4e558d02277ec3399975ccc4215b",
+    "cortex/results/campaign_b/rp2040_campaign_b.csv": "b465c94a117eaa3866990784f831f1383542afdb51729ecd26f19a2413b79ada"
+  }
+}

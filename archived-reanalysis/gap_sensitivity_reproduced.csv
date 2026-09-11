@@ -1,0 +1,25 @@
+platform,level,gap_fraction,assignments_identical
+ESP32 deep,44,0.025,True
+ESP32 deep,44,0.05,True
+ESP32 deep,44,0.1,True
+RP2040 deep,44,0.025,True
+RP2040 deep,44,0.05,True
+RP2040 deep,44,0.1,True
+RP2040 unit 1,44,0.025,True
+RP2040 unit 1,44,0.05,True
+RP2040 unit 1,44,0.1,True
+RP2040 unit 2,44,0.025,True
+RP2040 unit 2,44,0.05,True
+RP2040 unit 2,44,0.1,True
+RP2040 unit 1,65,0.025,True
+RP2040 unit 1,65,0.05,True
+RP2040 unit 1,65,0.1,True
+RP2040 unit 2,65,0.025,True
+RP2040 unit 2,65,0.05,True
+RP2040 unit 2,65,0.1,True
+RP2040 unit 1,87,0.025,True
+RP2040 unit 1,87,0.05,True
+RP2040 unit 1,87,0.1,True
+RP2040 unit 2,87,0.025,True
+RP2040 unit 2,87,0.05,True
+RP2040 unit 2,87,0.1,True

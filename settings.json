@@ -1,0 +1,80 @@
+{
+  "data_release_date": "2026-09-11",
+  "signing": {
+    "main_calls": 350000,
+    "esp32": {
+      "calls": 50000,
+      "parameter_sets": [
+        44
+      ],
+      "cpu_mhz": 240,
+      "compiler": "GCC 13.2.0",
+      "sdk": "ESP-IDF 5.2.1",
+      "optimization": "-Os",
+      "core": 1
+    },
+    "rp2040": {
+      "boards": 2,
+      "calls_per_board_per_set": 50000,
+      "parameter_sets": [
+        44,
+        65,
+        87
+      ],
+      "cpu_mhz": 125,
+      "compiler": "Arm GNU 12.2.1",
+      "sdk": "Pico SDK 2.2.0",
+      "optimization": "-O3",
+      "core": 0
+    },
+    "design": {
+      "keys": 10,
+      "messages": 5,
+      "message_bytes": 128,
+      "boot_blocks": 5,
+      "repeats_per_key_message_boot": 200,
+      "calibration_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "calibration_boots": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "telemetry": {
+    "runs": 57,
+    "seconds_per_run": 600,
+    "acquisition_period_ms": 10,
+    "acquisition_work_us": 100,
+    "report_periods_ms": [
+      100,
+      250,
+      1000
+    ],
+    "replicates": 3,
+    "pending_queue_capacity": 8,
+    "esp32_fixture_policy": "64 signing-randomness fixtures per key, fixed 128-byte message",
+    "rp2040_fixture_policy": "Distinct 128-byte messages and derived randomness per request; paired across both boards",
+    "rp2040_acquisition_iterations": 1380,
+    "rp2040_measured_calibration_us": 99.97,
+    "rp2040_build_id": "2b8b925c505ee68d5148a0038adbcbaeb79142575f5e2b96b47d0d963476ba8b"
+  },
+  "stages": {
+    "esp32_signatures": 1000,
+    "esp32_candidates": 4160,
+    "esp32_checkpoints": 17100,
+    "rp2040_signatures": 6000,
+    "rp2040_candidates": 26475
+  },
+  "dataset_repository": "https://github.com/rojinc/mldsa-timing-data",
+  "dataset_version": "1.0.0"
+}

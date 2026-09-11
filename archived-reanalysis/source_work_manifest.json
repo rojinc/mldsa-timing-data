@@ -1,0 +1,27 @@
+{
+  "vendor_commit": "3730b32a",
+  "files": {
+    "44": {
+      "params.h": "0210251cea61d26e49b2dad16c4ed86d65474fbffa54c61af7a22c677ddd3cd2",
+      "sign.c": "474d7a8c33b45a5e19d9f8a76f501c7ecaa6ca667171a0f40942c71456cbbec2",
+      "ntt.c": "c9fd2b30ef1175f2c66b14c4385a68b22bf500e8349c16d0b5fe1fecf31e5470",
+      "poly.c": "9ae04a2bf234ee6fd380826f4cc9f5fe0c55b6a04e0d8818a52da1b68c10e6d2",
+      "polyvec.c": "461a4b048c84c27e73daa7b9aaec94942cdcead3ea55dca5cac63bcf4f443d96"
+    },
+    "65": {
+      "params.h": "9a8cbfeb0f0573d8e0bfe1bd14ffaf0e342ba1adf48d09b49f9d5f4b7eab6928",
+      "sign.c": "dced10c875fd1dc6a3683a13f377e13f2a71b33c763e3f5b9ef5429de94dcd68",
+      "ntt.c": "5b996157805d2b5b6ac83b57af350e42397d409c859c80e41cb011365325cc41",
+      "poly.c": "d4b88b41ba9754a3ba09db2722d0ac86131e5d312e3dada63cba760740989def",
+      "polyvec.c": "71becebe740254b33da42ceeec0b83223bf17fc3353ce1523b52a295a77a1569"
+    },
+    "87": {
+      "params.h": "26683f8cc27c38d1ac6daa21523207d515be060ea1f8aaa1c9fd160035da1780",
+      "sign.c": "1ce9b121796e8ad4fb5e7249c72535eecc28ada244e67267c320fc9a708588fb",
+      "ntt.c": "dcee01c5f3203ba902f8f04c03e965d83d342fd1ab6142cd61375665bf90ec5d",
+      "poly.c": "df414802abc2fb4c517425776721ea557c5232332b6112117028d0b4a4436f61",
+      "polyvec.c": "677b08196ad4177905c497838454c8d7489758d4a27aaf6e6babd0797e7ca816"
+    }
+  },
+  "interpretation": "Static arithmetic count only. Hashing, sampling, memory traffic and early-exit norm scans are not cycle weighted."
+}
