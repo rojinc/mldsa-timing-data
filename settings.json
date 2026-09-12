@@ -76,5 +76,23 @@
     "rp2040_candidates": 26475
   },
   "dataset_repository": "https://github.com/rojinc/mldsa-timing-data",
-  "dataset_version": "1.0.0"
+  "dataset_version": "1.0.1",
+  "deadline_reference": {
+    "source": "NIST FIPS 204 potential updates (errata)",
+    "source_updated": "2026-07-31",
+    "source_url": "https://csrc.nist.gov/files/pubs/fips/204/final/docs/fips-204-potential-updates.xlsx",
+    "status": "proposed corrections, not an official revision",
+    "expected_iterations": {
+      "44": 4.36,
+      "65": 5.14,
+      "87": 3.91
+    },
+    "common_geometric_mean": 5.14,
+    "iteration_budgets": {
+      "1e-3": 32,
+      "1e-6": 64,
+      "1e-9": 96
+    },
+    "cap_reference": 821
+  }
 }

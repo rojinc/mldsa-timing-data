@@ -13,7 +13,7 @@ This dataset measures how ML-DSA rejection sampling affects signing latency and 
 
 ## Download and read
 
-Download [version 1.0.0](https://github.com/rojinc/mldsa-timing-data/releases/tag/v1.0.0), or use **Code > Download ZIP**. CSV files open directly in spreadsheet and statistical software. RP2040 pilot files use JSONL to retain nested diagnostic events. No code or firmware is required to read the data.
+Download [version 1.0.1](https://github.com/rojinc/mldsa-timing-data/releases/tag/v1.0.1), or use **Code > Download ZIP**. CSV files open directly in spreadsheet and statistical software. RP2040 pilot files use JSONL to retain nested diagnostic events. No code or firmware is required to read the data.
 
 | Folder | Contents |
 |---|---|
@@ -31,9 +31,11 @@ ESP32 telemetry repeats 64 signing-randomness fixtures per key; RP2040 uses dist
 
 The sensitivity tables contain 27 histogram settings per archived trace and 3 gap thresholds per trace. Sample-size rows are derived resamples, not additional device measurements. Superseded telemetry, incomplete attempts and the duplicate archived Campaign B are excluded.
 
+Version 1.0.1 updates the derived deadline calculations to the repetition counts in [NIST's July 31, 2026 potential corrections to FIPS 204](https://csrc.nist.gov/pubs/fips/204/final): 4.36, 5.14 and 3.91. The common geometric reference gives budgets of 32, 64 and 96 iterations at 10^-3, 10^-6 and 10^-9, and a cap reference of 821. NIST labels these as proposed corrections, not an official revision. The original 2024 reference is retained in the iteration comparison files. All 43 files under `measurements/` are byte-for-byte unchanged from version 1.0.0.
+
 ## Citation
 
-Rojin Chhetri and Babu Pillai. *ML-DSA timing data*. Version 1.0.0, 2026. https://github.com/rojinc/mldsa-timing-data
+Rojin Chhetri and Babu Pillai. *ML-DSA timing data*. Version 1.0.1, 2026. https://github.com/rojinc/mldsa-timing-data
 
 GitHub's **Cite this repository** option uses [`CITATION.cff`](CITATION.cff).
 
