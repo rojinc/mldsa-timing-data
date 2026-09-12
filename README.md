@@ -1,8 +1,5 @@
 # ML-DSA timing data
 
-**Rojin Chhetri and Babu Pillai**
-
-Experimental data accompanying *Deadline-Oriented Tail Estimates for ML-DSA Signing on Constrained Microcontrollers*.
 
 This dataset measures how ML-DSA rejection sampling affects signing latency and the timing of concurrent acquisition tasks on ESP32 and RP2040 microcontrollers. It contains individual measurements, numerical results and the information needed to interpret each field.
 
