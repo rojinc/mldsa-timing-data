@@ -1,5 +1,5 @@
 {
-  "data_release_date": "2026-09-11",
+  "data_release_date": "2026-09-12",
   "signing": {
     "main_calls": 350000,
     "esp32": {
