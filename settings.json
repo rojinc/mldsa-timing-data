@@ -76,7 +76,7 @@
     "rp2040_candidates": 26475
   },
   "dataset_repository": "https://github.com/rojinc/mldsa-timing-data",
-  "dataset_version": "1.0.1",
+  "dataset_version": "1.0.2",
   "deadline_reference": {
     "source": "NIST FIPS 204 potential updates (errata)",
     "source_updated": "2026-07-31",
@@ -94,5 +94,17 @@
       "1e-9": 96
     },
     "cap_reference": 821
+  },
+  "iteration_mean_intervals": {
+    "confidence_level": 0.95,
+    "method": "Student t across 10 shared key means, 9 degrees of freedom",
+    "cluster": "Key identity within each parameter set, shared across boards",
+    "pooling": {
+      "44": "ESP32 and both RP2040 units, 150000 signatures",
+      "65": "Both RP2040 units, 100000 signatures",
+      "87": "Both RP2040 units, 100000 signatures"
+    },
+    "conditioning": "Recorded board, message and boot design",
+    "notes": "controlled-results/iteration_analysis_notes.json"
   }
 }

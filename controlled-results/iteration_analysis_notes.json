@@ -1,0 +1,13 @@
+{
+  "interval": "pointwise two-sided 95% Student t interval with 9 degrees of freedom",
+  "clusters": "10 shared key identities per parameter set, combining the same key across boards, messages and boots",
+  "cluster_identity_check": "The archived ML-DSA-44 public-key fixture files are byte-identical across the ESP32 and RP2040 campaigns. RP2040 units share fixtures for all sets.",
+  "cluster_se_formula": "sqrt(G/(G-1) * sum_g (K_sum_g - n_g * mean_K)^2 / N^2), G=10",
+  "naive_interval": "mean plus/minus 1.96 times sample standard deviation divided by sqrt(N); sensitivity only",
+  "mechanism_residual": "Y_i = K_i - M_finite_width*(1+hint_i); same clustered interval applied to Y",
+  "assumptions": "Intervals cluster the specified keys and condition on the observed board/message/boot design. Finite-width norm approximation retains uniform and independent coefficient assumptions; the observed zero ct0 count is used for the empirical hint adjustment.",
+  "primary_sources": [
+    "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf",
+    "https://pq-crystals.org/dilithium/data/dilithium-specification-round3-20210208.pdf"
+  ]
+}
