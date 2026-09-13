@@ -1,0 +1,41 @@
+{
+  "version": "1.0.3",
+  "date": "2026-09-13",
+  "inputs": {
+    "devices": "All 350000 main signatures in measurements/signing; no pilots or stage records",
+    "x86": "measurements/archived/x86_iterations.csv, 10000 records per set"
+  },
+  "pooling": {
+    "44": "150000 signatures, ESP32 and both RP2040 units",
+    "65": "100000 signatures, both RP2040 units",
+    "87": "100000 signatures, both RP2040 units"
+  },
+  "quantiles": {
+    "probabilities": [
+      0.95,
+      0.99,
+      0.999
+    ],
+    "estimator": "Smallest K whose cumulative count is at least ceil(N*p), using exact rational ranks",
+    "corrected_reference": "ceil(log(1-p)/log(1-1/m)), m = 4.36, 5.14 or 3.91"
+  },
+  "key_bootstrap": {
+    "clusters": 10,
+    "unit": "Shared key identity within a parameter set; keep all its boards, messages and boot blocks together",
+    "resample": "Draw 10 keys independently with replacement from the 10 observed identities; retain every record in each selected key, with multiplicity",
+    "evaluation": "Enumerate all 92378 nonnegative multiplicity vectors w with sum(w)=10",
+    "weight": "10!/(product(w_i!)*10^10); integer numerator counts ordered key resamples",
+    "ordered_resamples": 10000000000,
+    "interval": "Pointwise equal-tailed percentile interval: inverse bootstrap CDF at 0.025 and 0.975; no interpolation",
+    "se": "Standard deviation of the exact conditional bootstrap distribution, not Monte Carlo standard error"
+  },
+  "ordinary_bootstrap": {
+    "unit": "Individual signatures within source and set",
+    "evaluation": "For rank r=ceil(N*p), the bootstrap quantile CDF at integer k is Pr[Binomial(N,F_empirical(k)) >= r]",
+    "interval": "Pointwise inverse bootstrap CDF at 0.025 and 0.975; no interpolation",
+    "se": "Standard deviation computed from successive CDF differences",
+    "role": "Sensitivity comparison; device primary intervals use shared-key clusters"
+  },
+  "interpretation": "All 9 device point quantiles equal the corrected references, and all 9 pointwise key-bootstrap intervals contain them. Coverage is conditional on the observed keys and board/message/boot design. A zero-width interval reflects a concentrated discrete bootstrap distribution and does not establish zero population uncertainty. Host and device inputs are not paired; their comparison does not isolate hardware from workload or build differences. These quantiles do not measure rare-event probabilities such as 10^-9.",
+  "measurement_integrity": "All 41 measurement files are unchanged from version 1.0.0."
+}

@@ -1,5 +1,5 @@
 {
-  "data_release_date": "2026-09-12",
+  "data_release_date": "2026-09-13",
   "signing": {
     "main_calls": 350000,
     "esp32": {
@@ -76,7 +76,7 @@
     "rp2040_candidates": 26475
   },
   "dataset_repository": "https://github.com/rojinc/mldsa-timing-data",
-  "dataset_version": "1.0.2",
+  "dataset_version": "1.0.3",
   "deadline_reference": {
     "source": "NIST FIPS 204 potential updates (errata)",
     "source_updated": "2026-07-31",
@@ -106,5 +106,15 @@
     },
     "conditioning": "Recorded board, message and boot design",
     "notes": "controlled-results/iteration_analysis_notes.json"
+  },
+  "iteration_percentiles": {
+    "probabilities": [
+      0.95,
+      0.99,
+      0.999
+    ],
+    "estimator": "nearest rank",
+    "primary_device_interval": "pointwise 95% percentile interval from exact resampling of 10 shared key clusters",
+    "notes": "controlled-results/iteration_percentile_notes.json"
   }
 }

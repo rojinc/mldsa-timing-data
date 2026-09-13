@@ -8,8 +8,8 @@ authors:
   - family-names: Pillai
     given-names: Babu
 license: CC-BY-4.0
-version: 1.0.2
-date-released: 2026-09-12
+version: 1.0.3
+date-released: 2026-09-13
 url: "https://github.com/rojinc/mldsa-timing-data"
 repository-code: "https://github.com/rojinc/mldsa-timing-data"
 abstract: >-
