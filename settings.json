@@ -1,5 +1,5 @@
 {
-  "data_release_date": "2026-09-13",
+  "data_release_date": "2026-10-11",
   "signing": {
     "main_calls": 350000,
     "esp32": {
@@ -51,7 +51,7 @@
     }
   },
   "telemetry": {
-    "runs": 57,
+    "runs": 75,
     "seconds_per_run": 600,
     "acquisition_period_ms": 10,
     "acquisition_work_us": 100,
@@ -66,7 +66,14 @@
     "rp2040_fixture_policy": "Distinct 128-byte messages and derived randomness per request; paired across both boards",
     "rp2040_acquisition_iterations": 1380,
     "rp2040_measured_calibration_us": 99.97,
-    "rp2040_build_id": "2b8b925c505ee68d5148a0038adbcbaeb79142575f5e2b96b47d0d963476ba8b"
+    "rp2040_build_id": "2b8b925c505ee68d5148a0038adbcbaeb79142575f5e2b96b47d0d963476ba8b",
+    "runs_first_cohort": 57,
+    "esp32_fresh_input_runs": {
+      "runs": 18,
+      "fixture_policy": "distinct 128-byte message and signing randomness per request, derived on the device from the run seed before the start timestamp (index 3,000,000 + 10,000*key + request id)",
+      "captured": "2026-10-10",
+      "reference_check": "all 54,000 report digests matched host-regenerated, verified signatures"
+    }
   },
   "stages": {
     "esp32_signatures": 1000,
@@ -76,7 +83,7 @@
     "rp2040_candidates": 26475
   },
   "dataset_repository": "https://github.com/rojinc/mldsa-timing-data",
-  "dataset_version": "1.0.3",
+  "dataset_version": "1.1.0",
   "deadline_reference": {
     "source": "NIST FIPS 204 potential updates (errata)",
     "source_updated": "2026-07-31",
@@ -116,5 +123,27 @@
     "estimator": "nearest rank",
     "primary_device_interval": "pointwise 95% percentile interval from exact resampling of 10 shared key clusters",
     "notes": "controlled-results/iteration_percentile_notes.json"
+  },
+  "validation_blocks": {
+    "boards": {
+      "rp2040_1": "E66368254F75782F",
+      "rp2040_2": "E663AC91D321B038"
+    },
+    "parameter_sets": [
+      65,
+      44,
+      87
+    ],
+    "boot_blocks": [
+      5,
+      6
+    ],
+    "calls_per_block": 5000,
+    "design": "10 keys x 5 messages x 100 repetitions, fresh recorded randomness, counting mode",
+    "calls_total": 60000,
+    "session": "validation_20261010_210745_0ebafb85",
+    "session_created_utc": "2026-10-10T10:37:45Z",
+    "frozen_rule_sha256": "5c90edb53fc3edeb24949294f66ead4eac5315fc5dc1459e9b4d2109e12288ff",
+    "firmware_build": "7a8c23b6a5afb6c936f70eff6b87336849c3d30b9de0bdbeb819aafabdcb2e0a"
   }
 }

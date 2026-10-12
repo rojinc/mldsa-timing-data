@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-10T10:37:45.253046+00:00",
+  "package_files_checked": {
+    "build-manifest.json": "30c054573079b740155311a287301204d47165d75a7341403d137e5dfa9b1ba0",
+    "firmware/rp2040_campaign.elf.map": "f2009be49d2054115a4f79f449e89025b5b87ed15715e4f7b8d4e1795cb826a4",
+    "firmware/rp2040_campaign.uf2": "cacc9f3e845da1a5de7be797518446b17412be7d11c2485c4cc3351c99dceed8",
+    "fixtures/messages.bin": "96f471f8e243a0d0d747bf17cf60a16fcbb6c4538479330c06e8e8f684705e86",
+    "fixtures/set44/keygen_seeds.bin": "85a7bc7bed037c070c368c57455f63f3027866640ef832ef6eb3c80436d690ea",
+    "fixtures/set44/public_keys.bin": "06953cf3a7713a7b3b0a3476102bddb4b9f29cc7cb8d47459eec4cea30b41d1b",
+    "fixtures/set44/secret_keys.bin": "9fe4fe732b4f8f656a1458824591d6c1405c99624e6071f25dcbdb928b29ef26",
+    "fixtures/set65/keygen_seeds.bin": "683cadd690451761cea85e41473b5179dd43e08835be865ba57f13a7066d8a0f",
+    "fixtures/set65/public_keys.bin": "2b0be7ec0b6fbcb9a3758b7131eabac535d69bed6c384d768a2c7a8d13c7c452",
+    "fixtures/set65/secret_keys.bin": "c4061a1e836099de5bd69c2dd895ec84922b5f3336089024ff0582061f676651",
+    "fixtures/set87/keygen_seeds.bin": "9995b333b6f8f588f061d15dce549eb613e302d044ad1bc9e23d7c13025b212d",
+    "fixtures/set87/public_keys.bin": "d0e8778abd3945e5abbc9015053556b2e1aa7c9eb8705ada414e43469243bd5d",
+    "fixtures/set87/secret_keys.bin": "905ab5599f996e08f1a5fece7ea72023bdf653686f43a2ef6af6e9ae312d9de2",
+    "host/analyze.py": "60fe28f035dde81a5a6fa7e5b5ca850e1c39bc4dede9503ffb6b679c37ba2282",
+    "host/campaign.py": "ed74f9d88ec08aeaabdb295e980968d25b3783e0327da9a226e26dc80a36bd82",
+    "host/flash.py": "f74710dc95463ee3b238831ab0ff5e4ae4e06d9446d9c80782c6573bd77b82a2",
+    "host/protocol.py": "d22a44ff6c5f530fd086cabe7d3a914d5864ccca0015b0041df3d126bb7ae15c",
+    "host/resume.py": "22a9d0ff9e62a7694c6c63f7ffc8e5e5a17912d3a3343f9526d07e990ef6f7d6"
+  },
+  "build": "7a8c23b6a5afb6c936f70eff6b87336849c3d30b9de0bdbeb819aafabdcb2e0a",
+  "smoke": false,
+  "boards": {
+    "rp2040_1": "E66368254F75782F",
+    "rp2040_2": "E663AC91D321B038"
+  },
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "sets": [
+    65,
+    44,
+    87
+  ],
+  "blocks_per_set": 2,
+  "repetitions": 100,
+  "first_boot_block_number": 5,
+  "expected_main_per_board": 30000,
+  "frozen_rule_sha256": "5c90edb53fc3edeb24949294f66ead4eac5315fc5dc1459e9b4d2109e12288ff",
+  "original_session": "campaign_20260908_191304_56ba3992",
+  "scope": "validation blocks for the frozen calibration-coverage rule; same keys and messages, fresh randomness, counting mode"
+}

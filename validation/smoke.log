@@ -1,0 +1,13 @@
+Checking the package and looking for the RP2040 boards...
+  rp2040_1 = E66368254F75782F: found on /dev/cu.usbmodem101
+  rp2040_2 = E663AC91D321B038: found on /dev/cu.usbmodem1101
+Results: /Users/rojinchhetri/Desktop/research/mldsa-rp2040-results-20260911/rp2040-validation/results/smoke_20261010_210459_54fb394c
+Frozen rule: 5c90edb53fc3edeb24949294f66ead4eac5315fc5dc1459e9b4d2109e12288ff
+Leave this window open. Ctrl+C stops the run and preserves its partial data.
+rp2040_1: set65_vblock5 COMPLETE (150 recorded invocations)
+rp2040_2: set65_vblock5 COMPLETE (150 recorded invocations)
+rp2040_1: set44_vblock5 COMPLETE (150 recorded invocations)
+rp2040_2: set44_vblock5 COMPLETE (150 recorded invocations)
+rp2040_2: set87_vblock5 COMPLETE (150 recorded invocations)
+rp2040_1: set87_vblock5 COMPLETE (150 recorded invocations)
+SMOKE CHECK COMPLETE.

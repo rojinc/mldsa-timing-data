@@ -1,0 +1,404 @@
+{
+ "configurations": [
+  {
+   "attainable_targets": {
+    "0.001": {
+     "D_ms": 302.951,
+     "n_eps": 27,
+     "predicted_iteration_tail": 0.0008664375813219071
+    },
+    "0.01": {
+     "D_ms": 205.742,
+     "n_eps": 18,
+     "predicted_iteration_tail": 0.009088485546623172
+    }
+   },
+   "calibration_subset": "S0 (keys 0-7, blocks 0-2)",
+   "config": "ESP32",
+   "coverage": [
+    {
+     "K2_single_rejection_calls_by_exit": {
+      "hint": 19,
+      "w0": 1729,
+      "z": 2501
+     },
+     "n": 24000,
+     "subset": "S0 (keys 0-7, blocks 0-2)"
+    }
+   ],
+   "ct0_note": "not excluded by the bound, unobserved in the campaign, not covered",
+   "envelope": {
+    "B_minus_ms": 21.579,
+    "B_plus_ms": 22.125,
+    "C_plus_ms": 10.801,
+    "D_examples_ms": {
+     "10": 119.334,
+     "2": 32.926,
+     "20": 227.344,
+     "32": 356.956,
+     "5": 65.329,
+     "50": 551.374
+    },
+    "D_of_K_ms": "B_plus + (K-1)*C_plus",
+    "governing_exit": "hint"
+   },
+   "mean_K_cal": 4.3509166666666665,
+   "n_calibration": 24000,
+   "predictions": [
+    "P1: zero exceedances of D(K) among new calls with K>=2",
+    "P2: K=1 exceedances of B_plus reported (count, max excess)",
+    "P3: rate(t > D(n_eps)) <= eps, by Wilson 95% interval",
+    "P4: rate(K > n_eps) consistent with q_cal^n_eps"
+   ],
+   "q_cal": 0.7701633755338914,
+   "set": 44
+  },
+  {
+   "attainable_targets": {
+    "0.001": {
+     "D_ms": 1028.511,
+     "n_eps": 27,
+     "predicted_iteration_tail": 0.0009379118106662685
+    },
+    "0.01": {
+     "D_ms": 697.059,
+     "n_eps": 18,
+     "predicted_iteration_tail": 0.009581672805354807
+    }
+   },
+   "calibration_subset": "S0 (keys 0-7, blocks 0-2)",
+   "config": "RP2040 unit 1",
+   "coverage": [
+    {
+     "K2_single_rejection_calls_by_exit": {
+      "hint": 26,
+      "w0": 1674,
+      "z": 2522
+     },
+     "n": 24000,
+     "subset": "S0 (keys 0-7, blocks 0-2)"
+    }
+   ],
+   "ct0_note": "not excluded by the bound, unobserved in the campaign, not covered",
+   "envelope": {
+    "B_minus_ms": 70.854,
+    "B_plus_ms": 70.983,
+    "C_plus_ms": 36.828,
+    "D_examples_ms": {
+     "10": 402.435,
+     "2": 107.811,
+     "20": 770.715,
+     "32": 1212.651,
+     "5": 218.295,
+     "50": 1875.555
+    },
+    "D_of_K_ms": "B_plus + (K-1)*C_plus",
+    "governing_exit": "hint"
+   },
+   "mean_K_cal": 4.394208333333333,
+   "n_calibration": 24000,
+   "predictions": [
+    "P1: zero exceedances of D(K) among new calls with K>=2",
+    "P2: K=1 exceedances of B_plus reported (count, max excess)",
+    "P3: rate(t > D(n_eps)) <= eps, by Wilson 95% interval",
+    "P4: rate(K > n_eps) consistent with q_cal^n_eps"
+   ],
+   "q_cal": 0.7724277220963199,
+   "set": 44
+  },
+  {
+   "attainable_targets": {
+    "0.001": {
+     "D_ms": 1028.442,
+     "n_eps": 27,
+     "predicted_iteration_tail": 0.0008657023798749597
+    },
+    "0.01": {
+     "D_ms": 697.017,
+     "n_eps": 18,
+     "predicted_iteration_tail": 0.009083343562026329
+    }
+   },
+   "calibration_subset": "S0 (keys 0-7, blocks 0-2)",
+   "config": "RP2040 unit 2",
+   "coverage": [
+    {
+     "K2_single_rejection_calls_by_exit": {
+      "hint": 25,
+      "w0": 1779,
+      "z": 2544
+     },
+     "n": 24000,
+     "subset": "S0 (keys 0-7, blocks 0-2)"
+    }
+   ],
+   "ct0_note": "not excluded by the bound, unobserved in the campaign, not covered",
+   "envelope": {
+    "B_minus_ms": 70.85,
+    "B_plus_ms": 70.992,
+    "C_plus_ms": 36.825,
+    "D_examples_ms": {
+     "10": 402.417,
+     "2": 107.817,
+     "20": 770.667,
+     "32": 1212.567,
+     "5": 218.292,
+     "50": 1875.417
+    },
+    "D_of_K_ms": "B_plus + (K-1)*C_plus",
+    "governing_exit": "hint"
+   },
+   "mean_K_cal": 4.350458333333333,
+   "n_calibration": 24000,
+   "predictions": [
+    "P1: zero exceedances of D(K) among new calls with K>=2",
+    "P2: K=1 exceedances of B_plus reported (count, max excess)",
+    "P3: rate(t > D(n_eps)) <= eps, by Wilson 95% interval",
+    "P4: rate(K > n_eps) consistent with q_cal^n_eps"
+   ],
+   "q_cal": 0.7701391615825919,
+   "set": 44
+  },
+  {
+   "attainable_targets": {
+    "0.001": {
+     "D_ms": 1693.69,
+     "n_eps": 32,
+     "predicted_iteration_tail": 0.0009691626972646953
+    },
+    "0.01": {
+     "D_ms": 1182.36,
+     "n_eps": 22,
+     "predicted_iteration_tail": 0.008475156457455548
+    }
+   },
+   "calibration_subset": "S3 (all keys, blocks 0-4)",
+   "config": "RP2040 unit 1",
+   "coverage": [
+    {
+     "K2_single_rejection_calls_by_exit": {
+      "hint": 0,
+      "w0": 2053,
+      "z": 1781
+     },
+     "n": 24000,
+     "subset": "S0 (keys 0-7, blocks 0-2)"
+    },
+    {
+     "K2_single_rejection_calls_by_exit": {
+      "hint": 0,
+      "w0": 2504,
+      "z": 2201
+     },
+     "n": 30000,
+     "subset": "S1 (all keys, blocks 0-2)"
+    },
+    {
+     "K2_single_rejection_calls_by_exit": {
+      "hint": 0,
+      "w0": 3321,
+      "z": 2929
+     },
+     "n": 40000,
+     "subset": "S2 (all keys, blocks 0-3)"
+    },
+    {
+     "K2_single_rejection_calls_by_exit": {
+      "hint": 2,
+      "w0": 4113,
+      "z": 3728
+     },
+     "n": 50000,
+     "subset": "S3 (all keys, blocks 0-4)"
+    }
+   ],
+   "ct0_note": "unreachable for valid keys",
+   "envelope": {
+    "B_minus_ms": 108.418,
+    "B_plus_ms": 108.567,
+    "C_plus_ms": 51.133,
+    "D_examples_ms": {
+     "10": 568.764,
+     "2": 159.7,
+     "20": 1080.094,
+     "32": 1693.69,
+     "5": 313.099,
+     "50": 2614.084
+    },
+    "D_of_K_ms": "B_plus + (K-1)*C_plus",
+    "governing_exit": "hint"
+   },
+   "mean_K_cal": 5.12962,
+   "n_calibration": 50000,
+   "predictions": [
+    "P1: zero exceedances of D(K) among new calls with K>=2",
+    "P2: K=1 exceedances of B_plus reported (count, max excess)",
+    "P3: rate(t > D(n_eps)) <= eps, by Wilson 95% interval",
+    "P4: rate(K > n_eps) consistent with q_cal^n_eps"
+   ],
+   "q_cal": 0.8050537856605362,
+   "set": 65
+  },
+  {
+   "attainable_targets": {
+    "0.001": {
+     "D_ms": 1693.55,
+     "n_eps": 32,
+     "predicted_iteration_tail": 0.0009878409319108372
+    },
+    "0.01": {
+     "D_ms": 1182.26,
+     "n_eps": 22,
+     "predicted_iteration_tail": 0.008587115898831222
+    }
+   },
+   "calibration_subset": "S0 (keys 0-7, blocks 0-2)",
+   "config": "RP2040 unit 2",
+   "coverage": [
+    {
+     "K2_single_rejection_calls_by_exit": {
+      "hint": 3,
+      "w0": 1930,
+      "z": 1761
+     },
+     "n": 24000,
+     "subset": "S0 (keys 0-7, blocks 0-2)"
+    }
+   ],
+   "ct0_note": "unreachable for valid keys",
+   "envelope": {
+    "B_minus_ms": 108.416,
+    "B_plus_ms": 108.551,
+    "C_plus_ms": 51.129,
+    "D_examples_ms": {
+     "10": 568.712,
+     "2": 159.68,
+     "20": 1080.002,
+     "32": 1693.55,
+     "5": 313.067,
+     "50": 2613.872
+    },
+    "D_of_K_ms": "B_plus + (K-1)*C_plus",
+    "governing_exit": "hint"
+   },
+   "mean_K_cal": 5.142291666666667,
+   "n_calibration": 24000,
+   "predictions": [
+    "P1: zero exceedances of D(K) among new calls with K>=2",
+    "P2: K=1 exceedances of B_plus reported (count, max excess)",
+    "P3: rate(t > D(n_eps)) <= eps, by Wilson 95% interval",
+    "P4: rate(K > n_eps) consistent with q_cal^n_eps"
+   ],
+   "q_cal": 0.8055341733176681,
+   "set": 65
+  },
+  {
+   "attainable_targets": {
+    "0.001": {
+     "D_ms": 1831.296,
+     "n_eps": 24,
+     "predicted_iteration_tail": 0.0008453145218020049
+    },
+    "0.01": {
+     "D_ms": 1253.24,
+     "n_eps": 16,
+     "predicted_iteration_tail": 0.008940165391430919
+    }
+   },
+   "calibration_subset": "S0 (keys 0-7, blocks 0-2)",
+   "config": "RP2040 unit 1",
+   "coverage": [
+    {
+     "K2_single_rejection_calls_by_exit": {
+      "hint": 11,
+      "w0": 2443,
+      "z": 1988
+     },
+     "n": 24000,
+     "subset": "S0 (keys 0-7, blocks 0-2)"
+    }
+   ],
+   "ct0_note": "unreachable for valid keys",
+   "envelope": {
+    "B_minus_ms": 169.219,
+    "B_plus_ms": 169.385,
+    "C_plus_ms": 72.257,
+    "D_examples_ms": {
+     "10": 819.698,
+     "2": 241.642,
+     "20": 1542.268,
+     "32": 2409.352,
+     "5": 458.413,
+     "50": 3709.978
+    },
+    "D_of_K_ms": "B_plus + (K-1)*C_plus",
+    "governing_exit": "hint"
+   },
+   "mean_K_cal": 3.916375,
+   "n_calibration": 24000,
+   "predictions": [
+    "P1: zero exceedances of D(K) among new calls with K>=2",
+    "P2: K=1 exceedances of B_plus reported (count, max excess)",
+    "P3: rate(t > D(n_eps)) <= eps, by Wilson 95% interval",
+    "P4: rate(K > n_eps) consistent with q_cal^n_eps"
+   ],
+   "q_cal": 0.7446618365197408,
+   "set": 87
+  },
+  {
+   "attainable_targets": {
+    "0.001": {
+     "D_ms": 1831.413,
+     "n_eps": 24,
+     "predicted_iteration_tail": 0.0008910213205177244
+    },
+    "0.01": {
+     "D_ms": 1253.317,
+     "n_eps": 16,
+     "predicted_iteration_tail": 0.009259596541070192
+    }
+   },
+   "calibration_subset": "S0 (keys 0-7, blocks 0-2)",
+   "config": "RP2040 unit 2",
+   "coverage": [
+    {
+     "K2_single_rejection_calls_by_exit": {
+      "hint": 12,
+      "w0": 2408,
+      "z": 2161
+     },
+     "n": 24000,
+     "subset": "S0 (keys 0-7, blocks 0-2)"
+    }
+   ],
+   "ct0_note": "unreachable for valid keys",
+   "envelope": {
+    "B_minus_ms": 169.22,
+    "B_plus_ms": 169.387,
+    "C_plus_ms": 72.262,
+    "D_examples_ms": {
+     "10": 819.745,
+     "2": 241.649,
+     "20": 1542.365,
+     "32": 2409.509,
+     "5": 458.435,
+     "50": 3710.225
+    },
+    "D_of_K_ms": "B_plus + (K-1)*C_plus",
+    "governing_exit": "hint"
+   },
+   "mean_K_cal": 3.941625,
+   "n_calibration": 24000,
+   "predictions": [
+    "P1: zero exceedances of D(K) among new calls with K>=2",
+    "P2: K=1 exceedances of B_plus reported (count, max excess)",
+    "P3: rate(t > D(n_eps)) <= eps, by Wilson 95% interval",
+    "P4: rate(K > n_eps) consistent with q_cal^n_eps"
+   ],
+   "q_cal": 0.7462975295721942,
+   "set": 87
+  }
+ ],
+ "description": "Freeze the calibration-coverage rule of Section VIII-D and pre-register its predictions.\n\nUsage:  python3 -I frozen_rule.py <data> <out>\n\nEverything here is computed from the original controlled campaign (dataset v1.0/v1.1, 50,000\ncalls per configuration).  The output, <out>/frozen_rule.json, is hashed (<out>/frozen_rule.sha256)\nand the hash is recorded in the validation session before any new block is captured, so the rule\nand its predicted deadlines cannot be adjusted after the new data are seen.\n\nTHE RULE (R1)\n 1. Calibration subset S0: keys 0-7, boot blocks 0-2 (24,000 calls), as in Section VIII.\n 2. Coverage condition: S0 must contain at least one single-rejection call (K = 2) for every\n    reachable exit.  Reachable exits are z, w0 and hint; ct0 is unreachable for valid ML-DSA-65 and\n    -87 keys and unobserved for ML-DSA-44 (it cannot be covered and is reported as such).\n 3. If an exit is not covered, enlarge the subset in this fixed order and take the first that\n    covers every reachable exit: S1 = all keys, blocks 0-2; S2 = all keys, blocks 0-3; S3 = the full\n    campaign (all keys, blocks 0-4).  If S3 does not cover, no envelope is issued.\n 4. From the chosen subset S: B+ = max signing time of K=1 calls; B- = min signing time of K=1\n    calls; C+ = max over K=2 calls of (t - B-).  Envelope D(K) = B+ + (K - 1) C+.\n 5. Attainable-target deadlines: q = 1 - 1/mean(K) over S; n_eps = ceil(log eps / log q) for\n    eps = 1e-2 and 1e-3; D(n_eps) as in 4.\n\nPRE-REGISTERED PREDICTIONS, tested on new reset-separated blocks with fresh randomness\n(10,000 calls per configuration: two blocks of 10 keys x 5 messages x 100 repetitions):\n P1. No new call with K >= 2 exceeds D(K).  (Primary; one exceedance falsifies P1 for that\n     configuration.)\n P2. New calls with K = 1 may exceed B+; their number and the largest excess are reported.\n P3. The exceedance rate of the fixed deadline D(n_eps) is at most eps for eps = 1e-2 and 1e-3,\n     tested by whether the observed rate's Wilson 95% interval lies below eps (established),\n     contains eps (not established), or lies above eps (contradicted).\n P4. The iteration-count exceedance K > n_eps occurs at a rate consistent with q^n_eps.",
+ "rule": "R1"
+}
