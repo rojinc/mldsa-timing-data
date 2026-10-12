@@ -44,16 +44,19 @@ manuscript); `round4_stats.py` takes the numbers of power and calibration simula
 
 ## Manuscript-to-output mapping
 
+Table, figure and section numbers follow the manuscript as submitted with this release (13 tables, 11 figures). `REPRODUCTION.md` is a log kept during revision and uses each round's own numbering.
+
 | Manuscript item | Script | Output file(s) |
 |---|---|---|
-| Table II, IV, VII; Sec. VIII-B, VIII-C; Table S1 | `modes2.py` (hint-path columns: `hint_path.py`) | `modes.txt`, `hint_path_archived.csv` |
-| Table V; Sec. VI-B (MAE, largest errors) | `verify2.py` | `controlled_fits.txt` |
-| Table VI; Sec. VII-A (means, intervals) | `verify2.py` | `controlled_fits.txt` |
-| Table XII (partial and complete-server utilisation) | `utilisation.py` | `utilisation.csv` |
+| Tables I, II, IV (scope of earlier work, data sources, scheduler semantics) | none: descriptive; Table II lists the files of this dataset, Table IV comes from the firmware sources and the dataset records | - |
+| Tables III, V, VIII; Sec. VIII-B, VIII-C; Table S1 | `modes2.py` (hint-path columns: `hint_path.py`) | `modes.txt`, `hint_path_archived.csv` |
+| Table VI; Sec. VI-B (MAE, largest errors) | `verify2.py` | `controlled_fits.txt` |
+| Table VII; Sec. VII-A (means, intervals) | `verify2.py` | `controlled_fits.txt` |
+| Table XIII (partial and complete-server utilisation) | `utilisation.py` | `utilisation.csv` |
 | Sec. IX-B, IX-C (acquisition and report counts) | `verify3.py`, `verify4.py` | `telemetry_counts.txt`, `telemetry_reports.txt` |
 | Fig. 7; Sec. VII-B (key bootstrap, Table S7); Sec. VII-D (Wilson intervals, per-key sd, variance component, F, boot F cells, ACF, runs, mixture, leave-one-key-out); Table S5 (per-key means) | `heterogeneity.py` | `hazard.csv`, `per_key.csv`, `per_boot.csv`, `acf.csv`, `loko.csv`, `heterogeneity_summary.csv` |
 | Sec. VII-D (LRT G, chi-square, simulated p-values, sensitivity thresholds, power, sd for 80% power); Table S6 | `round4_stats.py` | `round4_stats.csv` |
-| Table VIII; Fig. 9; Sec. VIII-D (exceedances, increments by K) | `envelope_controlled.py`, `extra_round3.py` | `envelope_controlled.csv`, `envelope_by_K.csv`, `exit_increments.csv`, `round3.txt` |
+| Table IX; Fig. 9; Sec. VIII-D (exceedances, increments by K) | `envelope_controlled.py`, `extra_round3.py` | `envelope_controlled.csv`, `envelope_by_K.csv`, `exit_increments.csv`, `round3.txt` |
 | Sec. IX-D level 1 (counts, timestamp agreement) | `queue_replay.py` | `replay_level1.csv` |
 | Sec. IX-D admission-rule check (28 mismatches, margins, directions); Sec. S-III (alternative rules) | `queue_replay.py`, `utilisation.py`, `extra_round3.py` | `replay_race.csv`, `replay_race_direction.csv`, `replay_race_variants.csv` |
 | Fig. 11; Sec. IX-D level 2; Table S2 | `queue_replay.py`, `fig_replay.py` | `replay_level2a.csv`, `response_curves.npz` |
@@ -61,12 +64,12 @@ manuscript); `round4_stats.py` takes the numbers of power and calibration simula
 | Sec. IX-D ESP32 permutation and controlled-pool replays; Table S4 | `queue_replay.py` | `replay_permutation_esp32.csv`, `replay_level2b_esp32.csv` |
 | Sec. IX-D and X quiet-benchmark counterfactual; Sec. S-III | `quiet_benchmark.py` | `quiet_benchmark.csv` |
 | Sec. IV-B overhead figures, fit a + b(K-1) and b/R_z; Table S8 | `round7.py` (after `envelope_controlled.py`) | `overhead.csv` |
-| Sec. VIII-D frozen rule; Sec. VIII-F validation blocks; Table XI; Sec. S-XII, Table S11 | `frozen_rule.py`, `validation_blocks.py` | `frozen_rule.json`, `validation_blocks.csv` |
+| Sec. VIII-D frozen rule; Sec. VIII-F validation blocks; Table XII; Sec. S-XII, Table S11 | `frozen_rule.py`, `validation_blocks.py` | `frozen_rule.json`, `validation_blocks.csv` |
 | Sec. IX-D baselines; Table S9 | `round7.py` | `baselines.csv` |
-| Sec. IV-D, IX-B, IX-C, IX-D (fresh-input ESP32 runs, conditional and independent forecasts); Table XII fresh rows; Sec. S-XI, Table S10 | `fresh_esp32.py`, `utilisation.py` | `fresh_esp32.csv`, `fresh_esp32_summary.txt`, `utilisation.csv` |
+| Sec. IV-D, IX-B, IX-C, IX-D (fresh-input ESP32 runs, conditional and independent forecasts); Table XIII fresh rows; Sec. S-XI, Table S10 | `fresh_esp32.py`, `utilisation.py` | `fresh_esp32.csv`, `fresh_esp32_summary.txt`, `utilisation.csv` |
 | Fig. 10 | `fig_telemetry.py` | `telemetry_results.pdf`, `telemetry_outcomes_points.csv` |
-| Sec. VIII-E, Table X (attainable-target exceedance) | `round7.py` | `deadline_validation.csv` |
-| Sec. VI-A (upper groups as hint path), VI-C (accepted candidates, ct0 bound), VIII-C, VIII-D (hint shares, unit-1 ML-DSA-65 deficit, stage envelope); Table IX last row; Tables S12-S14 | `hint_path.py` | `hint_path_stages.csv`, `hint_path_envelope.csv`, `hint_path_archived.csv`, `hint_counts.csv`, `hint_path.txt` |
+| Sec. VIII-E, Table XI (attainable-target exceedance) | `round7.py` | `deadline_validation.csv` |
+| Sec. VI-A (upper groups as hint path), VI-C (accepted candidates, ct0 bound), VIII-C, VIII-D (hint shares, unit-1 ML-DSA-65 deficit, stage envelope); Table X last row; Tables S12-S14 | `hint_path.py` | `hint_path_stages.csv`, `hint_path_envelope.csv`, `hint_path_archived.csv`, `hint_counts.csv`, `hint_path.txt` |
 | Sec. VIII-D and S-XIII randomness checks | `randomness_check.py` (run by `run_all.sh` when both raw archives are present) | `randomness_check.csv`, `randomness_check.txt` |
 | Sec. S-VII (Falcon) | `modes2.py` | `modes.txt` |
 
